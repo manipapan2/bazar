@@ -94,7 +94,7 @@ nav {
     rgba(200, 36, 135, 1) 34%,
     rgba(107, 21, 206, 1) 88%
   );
-  background-image: url(/!images/bazar.jpg);
+  background-image: url(bazar.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,7 +124,7 @@ nav {
   /* border: black 1px solid; */
   border-radius: 5px;
   margin-bottom: 20px;
-  background-image: url(bazar.jpg);
+  background-image: url(/!images/bazar.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,7 +195,6 @@ nav {
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
-    max-height: 250px;
   }
 
   .tozih2:hover p {
@@ -204,7 +203,6 @@ nav {
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
-    max-height: 250px;
   }
 
   .tozih3:hover p {
@@ -213,7 +211,6 @@ nav {
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
-    max-height: 250px;
   }
 
   .tozih4:hover p {
@@ -222,6 +219,5 @@ nav {
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
-    max-height: 250px;
   }
 }
