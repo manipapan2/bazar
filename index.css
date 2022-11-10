@@ -1,6 +1,7 @@
 * {
   border-style: none;
   font-weight: bold;
+  user-select:none;
 }
 
 *:focus {
