@@ -94,13 +94,15 @@ nav {
     rgba(200, 36, 135, 1) 34%,
     rgba(107, 21, 206, 1) 88%
   );
-  background-image: url(bazar.jpg);
+  background-image: url(/!images/bazar.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 500ms;
   cursor: pointer;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .tozih p {
@@ -122,7 +124,7 @@ nav {
   /* border: black 1px solid; */
   border-radius: 5px;
   margin-bottom: 20px;
-  background-image: url(/!images/bazar.jpg);
+  background-image: url(bazar.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,11 +168,9 @@ nav {
     /* margin-bottom: 100px; */
   }
 
-
   .divTozih {
     display: flex;
     flex-direction: column;
-    border: 2px blueviolet solid;
     margin: 0 60px 0 60px;
     padding: 40px 0 40px 0;
   }
@@ -180,8 +180,7 @@ nav {
     align-items: center;
   }
 
-
-  nav{
+  nav {
     margin-left: 0;
     margin-right: 0;
   }
@@ -191,34 +190,38 @@ nav {
   }
 
   .tozih1:hover p {
-    Flex-grow: 1;
+    flex-grow: 1;
     height: 100%;
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
+    max-height: 250px;
   }
 
   .tozih2:hover p {
-    Flex-grow: 1;
+    flex-grow: 1;
     height: 100%;
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
+    max-height: 250px;
   }
 
   .tozih3:hover p {
-    Flex-grow: 1;
+    flex-grow: 1;
     height: 100%;
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
+    max-height: 250px;
   }
 
   .tozih4:hover p {
-    Flex-grow: 1;
+    flex-grow: 1;
     height: 100%;
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
+    max-height: 250px;
   }
 }
