@@ -172,6 +172,7 @@ nav {
     flex-direction: column;
     border: 2px blueviolet solid;
     margin: 0 60px 0 60px;
+    padding: 40px 0 40px 0;
   }
 
   .chandTozih {
