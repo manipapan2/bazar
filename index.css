@@ -56,12 +56,14 @@ nav {
   background: white;
 }
 
+
 .navDiv {
   top: 0;
   display: flex;
   width: 100%;
   float: right;
 }
+
 
 .divTozih {
   display: flex;
@@ -72,40 +74,52 @@ nav {
   padding: 40px;
 }
 
+
 .chandTozih {
+  position: relative;
   display: flex;
   justify-content: space-around;
   margin-bottom: 100px;
+  z-index: 2;
 }
 
+
 .tozih {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 20%;
   min-height: 300px;
-  border: 1px pink solid;
+  /* border: 1px pink solid; */
   justify-content: flex-end;
   font-size: 13;
   /* padding: 20px; */
   border-radius: 15px;
   background: rgb(200, 36, 135);
-  background: linear-gradient(
-    0deg,
-    rgba(200, 36, 135, 1) 34%,
-    rgba(107, 21, 206, 1) 88%
-  );
-  background-image: url(/!images/bazar.jpg);
+  background: linear-gradient(0deg,rgba(200, 36, 135, 1) 34%,rgba(107, 21, 206, 1) 88%);
+  background-image: url(bazar.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 500ms;
   cursor: pointer;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  /* z-index: 1000; */
 }
 
-.tozih p {
+
+.tozih2::before{
+  display: none;
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background-color: blue;
+  z-index: -1;
+}
+
+
+.tozih p{
   background-color: rgba(153, 2, 235, 0.9);
   height: 40%;
   font-size: 11;
@@ -118,13 +132,27 @@ nav {
   transition: 600ms;
 }
 
+
+.an{
+  display: none;
+  position: absolute;
+  border: 1px red solid;
+  border-radius: 15px;
+  bottom: -25;
+  right: -25;
+  transition: 500ms;
+  background-color: red;
+  z-index: -1;
+}
+
+
 .aks {
   width: 100%;
   min-height: 60px;
   /* border: black 1px solid; */
   border-radius: 5px;
   margin-bottom: 20px;
-  background-image: url(bazar.jpg);
+  background-image: url(/!images/bazar.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,6 +161,15 @@ nav {
 .tozih:hover {
   transform: scale(1.2);
 }
+
+
+.tozih1:hover .an{
+  /* transform: translateX(0); */
+  /* transform: translateY(0); */
+  bottom: 0;
+  right: 0;
+}
+
 
 .tozih1:hover p {
   height: 100%;
@@ -195,7 +232,6 @@ nav {
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
-    max-height: 250px;
   }
 
   .tozih2:hover p {
@@ -204,7 +240,6 @@ nav {
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
-    max-height: 250px;
   }
 
   .tozih3:hover p {
@@ -213,7 +248,6 @@ nav {
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
-    max-height: 250px;
   }
 
   .tozih4:hover p {
@@ -222,6 +256,5 @@ nav {
     background-color: rgba(153, 2, 235, 1);
     border-radius: 15px;
     font-size: 13;
-    max-height: 250px;
   }
 }
