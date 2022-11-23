@@ -4,6 +4,7 @@
   user-select: none;
 }
 
+
 *:focus {
   outline: none;
 }
@@ -86,6 +87,7 @@ nav {
 
 .tozih {
   position: relative;
+  perspective: 1060px;
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -97,12 +99,8 @@ nav {
   border-radius: 15px;
   background: rgb(200, 36, 135);
   background: linear-gradient(0deg,rgba(200, 36, 135, 1) 34%,rgba(107, 21, 206, 1) 88%);
-  background-image: url(bazar.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: 500ms;
-  cursor: pointer;
+  cursor: default;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   /* z-index: 1000; */
   box-shadow: 20px 20px #F5DEBF;
@@ -110,9 +108,27 @@ nav {
 
 
 
+.pi{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(bazar.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  transform: rotateY(0deg);
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 1s;
+  backface-visibility: hidden;
+  
+  
+}
 
 
-.tozih p{
+.pi p{
   background-color: rgba(153, 2, 235, 0.9);
   height: 40%;
   font-size: 11;
@@ -125,6 +141,74 @@ nav {
   transition: 600ms;
 }
 
+
+.pu{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+
+.pu p{
+  background-color: rgba(153, 2, 235, 0.9);
+  height: 40%;
+  font-size: 11;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: rgb(255, 255, 255);
+  backface-visibility: hidden;
+}
+
+
+
+
+
+
+.tozih1:hover .dokme{
+  opacity: 1;
+}
+
+
+.dokme{
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  background-color: aqua;
+  width: 150px;
+  height: 25px;
+  margin:auto auto 20px auto;
+  /* margin-left: 60px; */
+  transition: 300ms;
+  border-radius: 5px;
+  /* align-items: center; */
+  justify-content: center;
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+
+
+.dokme p{
+  background-color: transparent;
+}
+
+
+.dokme:hover{
+  background-color: rgb(6, 153, 153);
+}
 
 .an{
   display: none;
@@ -145,7 +229,7 @@ nav {
   /* border: black 1px solid; */
   border-radius: 5px;
   margin-bottom: 20px;
-  background-image: url(bazar.jpg);
+  background-image: url(/!images/bazar.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,7 +258,13 @@ nav {
 }
 
 
-
+.charkh{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px red solid;
+  transform: rotateY('180');
+}
 
 
 
