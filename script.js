@@ -9,11 +9,13 @@ var dokme = document.getElementById("dokme")
 var dokmekam = document.getElementById("dokmekam")
 var t1w = t1.offsetWidth * 1.5;
 var t1h = t1.offsetHeight;
+var bodyfake = document.getElementById("bodyFake")
 dokme.addEventListener("click",koko)
 dokmekam.addEventListener("click",koko)
 t1.addEventListener("mouseleave",() => {
   dokme.style.transition="0.3s"
 })
+
 
 //==================================
 
@@ -57,6 +59,10 @@ function koko(){
   console.log(ttss)
 
   if(ttss == "yes"){
+    dokme.style.transition = "1s"
+    setTimeout(() => {
+      dokme.style.transition = "0.3s"
+    }, 1);
     t1.classList.remove("tozih")
     t1.classList.add("t1a")
     pi.classList.remove("pi")
@@ -64,7 +70,6 @@ function koko(){
     p1.style.borderRadius="15px"
     document.getElementById("pi").style.transform="rotateY(-180deg)"
     pu.style.transform="rotateY(0deg)"
-    dokme.style.transition = "1s"
     dokme.style.transform="rotateY(-180deg)"
     pup.style.borderRadius="15px"
     t1.classList.remove("tozih")
@@ -83,5 +88,8 @@ function koko(){
       pi.classList.remove("pia")
       pi.classList.add("pi")
     }, "1");
+    setTimeout(() => {
+      dokme.style.transition = "0.3s"
+    }, 1);
   }
 }
