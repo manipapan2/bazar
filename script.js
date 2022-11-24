@@ -59,6 +59,8 @@ function koko(){
   if(ttss == "yes"){
     t1.classList.remove("tozih")
     t1.classList.add("t1a")
+    pi.classList.remove("pi")
+    pi.classList.add("pia")
     p1.style.borderRadius="15px"
     document.getElementById("pi").style.transform="rotateY(-180deg)"
     pu.style.transform="rotateY(0deg)"
@@ -77,5 +79,9 @@ function koko(){
     pu.style.transform="rotateY(180deg)"
     dokme.style.transition = "1000ms"
     dokme.style.transform="rotateY(0deg)"
+    setTimeout(() => {
+      pi.classList.remove("pia")
+      pi.classList.add("pi")
+    }, "1");
   }
 }
