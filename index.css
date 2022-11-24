@@ -45,6 +45,7 @@ body {
   width: 100%;
   height: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 nav {
@@ -88,8 +89,8 @@ nav {
   perspective: 1060px;
   display: flex;
   flex-direction: column;
-  width: 20%;
-  min-height: 300px;
+  width: 270px;
+  height: 300px;
   /* border: 1px pink solid; */
   justify-content: flex-end;
   font-size: 13;
@@ -117,8 +118,8 @@ nav {
   perspective: 1060px;
   display: flex;
   flex-direction: column;
-  width: 20%;
-  min-height: 300px;
+  width: 270px;
+  height: 300px;
   /* border: 1px pink solid; */
   justify-content: flex-end;
   font-size: 13;
@@ -145,7 +146,7 @@ nav {
 .pi{
   position: absolute;
   display: flex;
-  width: 100%;
+  width: 270px;
   height: 100%;
   background-image: url(bazar.jpg);
   background-position: center center;
@@ -211,7 +212,7 @@ nav {
 .pu{
   display: flex;
   position: absolute;
-  width: 100%;
+  width: 270px;
   height: 100%;
   flex-direction: column;
   justify-content: flex-end;
@@ -351,10 +352,6 @@ nav {
 
 
 @media screen and (max-width: 700px) {
-  .tozih {
-    width: 100%;
-    /* margin-bottom: 100px; */
-  }
 
   .divTozih {
     display: flex;
