@@ -42,12 +42,15 @@ body {
     rgba(13, 80, 213, 1) 34%,
     rgba(11, 157, 126, 1) 88%
   );
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 nav {
   margin: 0 20% 100px 20%;
   top: 0;
-  display: flex;
+  display: none;
   height: 60px;
   border-left: 5px rgb(0, 0, 0) solid;
   border-right: 5px rgb(0, 0, 0) solid;
@@ -73,19 +76,14 @@ nav {
   border-radius: 8px;
   /* background-color: white; */
   padding: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.chandTozih {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 100px;
-  z-index: 2;
-}
 
 
-.tozih {
+.tozih{
   position: relative;
   perspective: 1060px;
   display: flex;
@@ -105,6 +103,42 @@ nav {
   /* z-index: 1000; */
   box-shadow: 20px 20px #F5DEBF;
 }
+
+
+.tozih:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 0px 5px #F5DEBF;
+}
+
+
+
+.t1a{
+  position: relative;
+  perspective: 1060px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  min-height: 300px;
+  /* border: 1px pink solid; */
+  justify-content: flex-end;
+  font-size: 13;
+  /* padding: 20px; */
+  border-radius: 15px;
+  background: rgb(200, 36, 135);
+  background: linear-gradient(0deg,rgba(200, 36, 135, 1) 34%,rgba(107, 21, 206, 1) 88%);
+  transition: 500ms;
+  cursor: default;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  /* z-index: 1000; */
+  box-shadow: 0px 0px 0px 5px #F5DEBF;
+}
+
+
+.t1a:hover{
+  box-shadow: 0px 0px 0px 5px #F5DEBF;
+  transform: scale(1.2);
+}
+
 
 
 
@@ -158,8 +192,8 @@ nav {
 
 .pu p{
   background-color: rgba(153, 2, 235, 0.9);
-  height: 40%;
-  font-size: 11;
+  height: 100%;
+  font-size: 17;
   font-weight: 300;
   margin: 0;
   padding: 10px;
@@ -171,10 +205,31 @@ nav {
 
 
 
+.dokmekam{
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 150px;
+  height: 25px;
+  margin:auto auto 20px auto;
+  background-color: aqua;
+  border-radius: 5px;
+  transition: 1s;
+}
 
 
 
-.tozih1:hover .dokme{
+.dokmekam:hover{
+  background-color: rgb(6, 153, 153);
+  transition: 0.3s;
+}
+
+
+
+.tozih:hover .dokme{
   opacity: 1;
 }
 
@@ -192,12 +247,12 @@ nav {
   height: 25px;
   margin:auto auto 20px auto;
   /* margin-left: 60px; */
-  transition: 300ms;
   border-radius: 5px;
   /* align-items: center; */
   justify-content: center;
   cursor: pointer;
   backface-visibility: hidden;
+  transition: 0.3s;
 }
 
 
@@ -236,11 +291,6 @@ nav {
 }
 
 
-.tozih:hover {
-  transform: scale(1.2);
-  box-shadow: 0px 0px 0px 5px #F5DEBF;
-}
-
 
 .tozih:hover p{
   height: 100%;
@@ -250,7 +300,7 @@ nav {
 }
 
 
-.tozih1:hover .an{
+.tozih:hover .an{
   /* transform: translateX(0); */
   /* transform: translateY(0); */
   bottom: 0;

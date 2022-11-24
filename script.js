@@ -1,27 +1,21 @@
 window.addEventListener('resize', maxheight);
+var t1a = document.getElementById("t1a")
 var t1 = document.getElementById("tozih1");
 var p1 = document.getElementById("p1");
-var t2 = document.getElementById("tozih2");
-var p2 = document.getElementById("p2");
-var t3 = document.getElementById("tozih3");
-var p3 = document.getElementById("p3");
-var t4 = document.getElementById("tozih4");
-var p4 = document.getElementById("p4");
 var pi = document.getElementById("pi")
 var pu = document.getElementById("pu")
 var pup = document.getElementById("pup")
 var dokme = document.getElementById("dokme")
+var dokmekam = document.getElementById("dokmekam")
 var t1w = t1.offsetWidth * 1.5;
 var t1h = t1.offsetHeight;
-var t2w = t2.offsetWidth * 1.5;
-var t2h = t2.offsetHeight;
-var t3w = t3.offsetWidth * 1.5;
-var t3h = t3.offsetHeight;
-var t4w = t4.offsetWidth * 1.5;
-var t4h = t4.offsetHeight;
+dokme.addEventListener("click",koko)
+dokmekam.addEventListener("click",koko)
+t1.addEventListener("mouseleave",() => {
+  dokme.style.transition="0.3s"
+})
 
 //==================================
-addEventListener("click",koko)
 
 
 function maxheight() {
@@ -30,22 +24,12 @@ function maxheight() {
     
     if (t1w < t1h) {
     document.getElementById("divTozih").style.margin = "0";
-    document.getElementById("chandTozih").style.justifyContent ="space-between";
-    document.getElementById("chandTozih2").style.justifyContent ="space-between";
     t1.style.width = t1w + 50;
-    t2.style.width = t2w + 50;
-    t3.style.width = t3w + 50;
-    t4.style.width = t4w + 50;
   }
   
   
   p1.style.maxHeight = t1.offsetHeight;
 
-  p2.style.maxHeight = t2.offsetHeight;
-
-  p3.style.maxHeight = t3.offsetHeight;
-
-  p4.style.maxHeight = t4.offsetHeight;
 
   // dokme.style.marginLeft = t1.offsetWidth/2
 }
@@ -73,19 +57,25 @@ function koko(){
   console.log(ttss)
 
   if(ttss == "yes"){
-    t1.style.boxShadow="0px 0px 0px 5px #F5DEBF"
-    p1.style.fontSize="17"
+    t1.classList.remove("tozih")
+    t1.classList.add("t1a")
     p1.style.borderRadius="15px"
-    p1.style.height="100%"
     document.getElementById("pi").style.transform="rotateY(-180deg)"
     pu.style.transform="rotateY(0deg)"
     dokme.style.transition = "1s"
     dokme.style.transform="rotateY(-180deg)"
-    pup.style.height="100%"
-    pup.style.fontSize="17"
     pup.style.borderRadius="15px"
-    setTimeout(() => {
-      p1.style.display="none"
-    }, "1000");
+    t1.classList.remove("tozih")
+    t1.classList.add("t1a")
+  }
+
+
+  if(ttss == "no"){
+    t1.classList.remove("t1a")
+    t1.classList.add("tozih")
+    pi.style.transform="rotateY(0deg)"
+    pu.style.transform="rotateY(180deg)"
+    dokme.style.transition = "1000ms"
+    dokme.style.transform="rotateY(0deg)"
   }
 }
