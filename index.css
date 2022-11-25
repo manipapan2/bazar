@@ -34,6 +34,7 @@ body {
 }
 
 .bodyFake {
+  position: absolute;
   display: flex;
   flex-direction: column;
   background: rgb(13, 80, 213);
@@ -85,7 +86,7 @@ nav {
 
 
 .tozih{
-  position: relative;
+  position: absolute;
   perspective: 1060px;
   display: flex;
   flex-direction: column;
@@ -114,7 +115,7 @@ nav {
 
 
 .t1a{
-  position: relative;
+  position: absolute;
   perspective: 1060px;
   display: flex;
   flex-direction: column;
@@ -262,9 +263,9 @@ nav {
 
 
 
-.tozih:hover .dokme{
+/* .tozih:hover .dokme{
   opacity: 1;
-}
+} */
 
 
 .dokme{
@@ -296,6 +297,11 @@ nav {
 
 .dokme:hover{
   background-color: rgb(6, 153, 153);
+}
+
+
+.tozih:hover .dokme{
+  opacity: 1;
 }
 
 .an{
@@ -351,37 +357,3 @@ nav {
 
 
 
-@media screen and (max-width: 700px) {
-
-  .divTozih {
-    display: flex;
-    flex-direction: column;
-    margin: 0 60px 0 60px;
-    padding: 40px 0 40px 0;
-  }
-
-  .chandTozih {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .marginTozih {
-    margin-bottom: 100px;
-  }
-  
-  
-  .tozih:hover p{
-    flex-grow: 1;
-    height: 100%;
-    background-color: rgba(153, 2, 235, 1);
-    border-radius: 15px;
-    font-size: 13;
-  }
-
-
-}

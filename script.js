@@ -15,8 +15,17 @@ dokmekam.addEventListener("click",koko)
 t1.addEventListener("mouseleave",() => {
   dokme.style.transition="0.3s"
 })
+// t1.addEventListener("mouseover",()=>{
+//   setTimeout(() => {
+//     dokme.classList.add("dokmec")
+//   }, 1);
+//   // dokme.style.opacity="1"
+//   // setTimeout(() => {
+//   //   dokme.style.opacity="1"
+//   // }, 2);
+// })
 
-
+// va dokme dir transition
 //==================================
 
 
