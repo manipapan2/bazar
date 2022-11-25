@@ -7,6 +7,7 @@ var pu = document.getElementById("pu")
 var pup = document.getElementById("pup")
 var dokme = document.getElementById("dokme")
 var dokmekam = document.getElementById("dokmekam")
+var nam = document.getElementById("nam")
 var t1w = t1.offsetWidth * 1.5;
 var t1h = t1.offsetHeight;
 var bodyfake = document.getElementById("bodyFake")
@@ -15,17 +16,21 @@ dokmekam.addEventListener("click",koko)
 t1.addEventListener("mouseleave",() => {
   dokme.style.transition="0.3s"
 })
-// t1.addEventListener("mouseover",()=>{
-//   setTimeout(() => {
-//     dokme.classList.add("dokmec")
-//   }, 1);
-//   // dokme.style.opacity="1"
-//   // setTimeout(() => {
-//   //   dokme.style.opacity="1"
-//   // }, 2);
+t1.addEventListener("mouseover",()=>{
+  setTimeout(() => {
+    nam.style.display="none"
+  }, 1);
+  // dokme.style.opacity="1"
+  // setTimeout(() => {
+  //   dokme.style.opacity="1"
+  // }, 2);
+})
+// document.getElementById("bodyFake").addEventListener("mouseover",()=>{
+//   if(dokme.style.opacity="0"){
+//     nam.style.display="flex"
+//   }
 // })
 
-// va dokme dir transition
 //==================================
 
 
@@ -57,6 +62,7 @@ function checknumber(xx){
     return "no"
   }
 }
+
 
 
 

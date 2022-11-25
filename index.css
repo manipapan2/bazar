@@ -113,6 +113,15 @@ nav {
 }
 
 
+.nam{
+  position: absolute;
+  display: flex;
+  z-index: 1000;
+  width: 100%;
+  height: 100px;
+  background:transparent;
+}
+
 
 .t1a{
   position: absolute;
