@@ -20,10 +20,12 @@ t1.addEventListener("mouseover",()=>{
   setTimeout(() => {
     nam.style.display="none"
   }, 1);
-  // dokme.style.opacity="1"
-  // setTimeout(() => {
-  //   dokme.style.opacity="1"
-  // }, 2);
+})
+
+t1.addEventListener("mouseout",()=>{
+  setTimeout(() => {
+    nam.style.display="flex"
+  }, 1);
 })
 // document.getElementById("bodyFake").addEventListener("mouseover",()=>{
 //   if(dokme.style.opacity="0"){
